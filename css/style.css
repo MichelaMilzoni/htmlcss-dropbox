@@ -9,6 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 
 a {
@@ -76,7 +77,23 @@ img {
   border-color: white;
   color: black;
 }
+
+.button-small-blue,
+.button-small-white {
+  width: 4rem;
+  height: 2rem;
+}
+
+.button-xl-blue {
+  height: 2rem;
+  width: 11rem;
+}
 /*  /BUTTON */
+
+.border-only {
+  max-width: 50px;
+  border-bottom: 1px solid grey;
+}
 
 /*  COLONNE */
 [class*='col'] {
@@ -151,16 +168,16 @@ img {
 /* SECTION JUMBO */
 #jumbo {
   background-color: aquamarine;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 #jumbo .container {
   position: relative;
-  top: 50px;
+  top: 3rem;
 }
 
 #jumbo h1 {
-  font-size: 61px;
+  font-size: 50px;
 }
 
 #jumbo .row * {
@@ -187,6 +204,11 @@ img {
 
 
 /* SECTION BUSINESS PLAN */
+#business-plan .row {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 #business-plan .col-1-3 {
   display: flex;
   flex-direction: column;
@@ -196,11 +218,13 @@ img {
   margin-bottom: 2px;
   text-align: center;
   border: 1px solid gray;
+
+  height: 790px;
 }
 
 #business-plan .payment-type > div {
   display: inline-block;
-  margin: 2rem 2rem 2rem 0rem;
+  margin: 2rem 2rem 4rem 0rem;
 }
 
 #business-plan .circle {
@@ -211,28 +235,59 @@ img {
   border-radius: 50%;
 }
 
-#business-plan .col-1-3 > div {
-  margin: 2rem 0;
+#business-plan .card-professional .title,
+#business-plan .title p:nth-child(3),
+#business-plan .call-to-action {
+  margin-bottom: 3rem;
 }
 
-#business-plan .card-professional {
-  padding-top: 0;
+
+#business-plan .card-advanced .title,
+#business-plan .card-enterprise .title {
+  margin-bottom: 2rem;
+}
+
+#business-plan li,
+#business-plan .call-to-action > *,
+#business-plan .glossary > p {
+  margin-bottom: 1rem;
+}
+
+#business-plan .title > * {
+  margin-bottom: 0.5rem;
 }
 
 #business-plan .category {
-  margin-left: -9px;
-  margin-right: -9px;
   text-align: center;
   border: 1px solid gray;
 
   position: relative;
-  bottom: 33px;
+  bottom: 1rem;
   right: 0;
+  width: 100%;
 }
 
 div.card-professional,
 div.card-advanced,
-div.card {
+div.card-enterprise {
   text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
+#business-plan .col-1-3 {
+  flex-basis: calc(100% / 3 - 2rem);
+}
+
+
+#business-plan .specs li::before {
+  content: "\2713"; /* Codice del segno di spunta */
+  color: #0061fe; /* Colore del segno di spunta */
+  font-weight: bold; /* Spessore del segno di spunta */
+  width: 1em; /* Spazio del segno di spunta */
+  padding-right: 5px;
+}
+
+#business-plan .glossary > p {
+  font-weight: bold;
+}
