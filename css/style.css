@@ -12,6 +12,10 @@ body {
   font-size: 12px;
 }
 
+[class*='fa-'] {
+  padding-right: 0.5rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -181,7 +185,7 @@ img {
 }
 
 #jumbo .row * {
-  gap: 3rem;
+  gap: 4rem;
 }
 
 #jumbo .title-jumbo {
@@ -207,6 +211,7 @@ img {
 #business-plan .row {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  row-gap: 2rem;
 }
 
 #business-plan .col-1-3 {
@@ -218,8 +223,11 @@ img {
   margin-bottom: 2px;
   text-align: center;
   border: 1px solid gray;
-
+  flex-basis: calc(100% / 3 - 2rem);
   height: 790px;
+
+  position: relative;
+  left: 0;
 }
 
 #business-plan .payment-type > div {
@@ -237,23 +245,31 @@ img {
 
 #business-plan .card-professional .title,
 #business-plan .title p:nth-child(3),
-#business-plan .call-to-action {
+#business-plan .call-to-action,
+#business-plan .info p:nth-child(1) {
   margin-bottom: 3rem;
 }
 
+#business-plan .card-advanced .title,
+#business-plan .card-enterprise .title,
+#business-plan .card-professional .title,
+#business-plan .card-enterprise-office .title {
+  margin-top: 1rem;
+}
 
 #business-plan .card-advanced .title,
-#business-plan .card-enterprise .title {
+#business-plan .card-enterprise .title,
+#business-plan .info p:nth-child(2) {
   margin-bottom: 2rem;
 }
 
 #business-plan li,
 #business-plan .call-to-action > *,
 #business-plan .glossary > p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-#business-plan .title > * {
+#business-plan .title > *{
   margin-bottom: 0.5rem;
 }
 
@@ -261,8 +277,8 @@ img {
   text-align: center;
   border: 1px solid gray;
 
-  position: relative;
-  bottom: 1rem;
+  position: absolute;
+  top: -15px;
   right: 0;
   width: 100%;
 }
@@ -275,10 +291,10 @@ div.card-enterprise {
   padding-right: 1rem;
 }
 
-#business-plan .col-1-3 {
-  flex-basis: calc(100% / 3 - 2rem);
+#business-plan .col-100 .card-enterprise-office {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
-
 
 #business-plan .specs li::before {
   content: "\2713"; /* Codice del segno di spunta */
@@ -288,6 +304,66 @@ div.card-enterprise {
   padding-right: 5px;
 }
 
-#business-plan .glossary > p {
+#business-plan .list li {
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  #business-plan .list li:first-child::before {
+    font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
+    content: "\f007"; /* Codice Unicode per l'icona dell'utente */
+    color: black;
+    position: absolute;
+    width: 1em;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
+  }
+
+  #business-plan .list li:nth-child(3)::before {
+    font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
+    content: "\f064"; /* Codice Unicode per l'icona dell'utente */
+    color: black;
+    position: absolute;
+    width: 1em;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
+  }
+
+  #business-plan .list li:nth-child(2)::before {
+    font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
+    content: "\e185"; /* Codice Unicode per l'icona dell'utente */
+    color: black;
+    position: absolute;
+    width: 1em;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
+  }
+
+#business-plan .glossary > p,
+#business-plan .info p:nth-child(1) {
   font-weight: bold;
 }
+
+#business-plan .col-30 > .button-xl-blue {
+  margin-bottom: 6rem;
+}
+
+#business-plan .card-enterprise-office  {
+  border: 1px solid gray;
+}
+
+#business-plan .col-100 .card-enterprise-office {
+  position: relative;
+}
+
+#business-plan .col-100 .category {
+  position: absolute;
+  top: -16px;
+  right: 0;
+  width: 100%;
+}
+
+/* / BUSINESS PLAN */
