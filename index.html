@@ -20,9 +20,8 @@
 <body>
 
     <!-- HEADER -->
-  <header class="page-header debug">
+  <header class="page-header">
     <!-- barra di navigazione header -->
-     <div class="row">
       <nav class="link-funzioni-header">
         <ul>
           <li><img src="./img/logo-small.png" alt="logo"></li>
@@ -45,138 +44,148 @@
 
    <!-- MAIN -->
   <main>
-          <!-- focus main -->
-      <div class="content-focus-main">
-        <div class="container">
-          <div class="row">
-            <h1 class="title-focus-main">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-          </div>
-          <div class="row description-focus-main">
-            <div class="col-40">
+          <!-- JUMBO -->
+    <section id="jumbo">
+        <div class="container container-xl">
+          <h1 class="title-jumbo">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+          <div class="row">            
+            <div class="col-30">
               <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto
                   Dropbox Business è più di uno spazio sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
               </p>
               <button class="button-xl-blue">Inizia la tua prova gratuita</button>
               <p>Annulla in qualsiasi momento</p>
-              <i class="fa-solid fa-arrow-down"></i>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
             </div>
-            <div class="img-focus-main col-60">
-              <img src="./img/jumbo.png" alt="">
+            <div class="col-70">
+              <img src="./img/jumbo.png" alt="jumbo">
             </div>
           </div>  
         </div>
-      </div>
-
-          <!-- content main -->
-      <div class="wrapper debug">
-        <div class="container">
-          <div class="row">
-            <div class="col-100">
-              <h2>Trova il piano business che fa per te</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-100">
-              <div>Fatturazione Mensile</div>
-              <div>Fatturazione Annuale</div>
-            </div>
-          </div>
+    </section>  
+      
+          <!-- BUSINESS PLAN -->
+    <section id="business-plan">
+      <div class="container">
+        <h2>Trova il piano business che fa per te</h2>
+        <div class="payment-type">
+          <div><span></span> Fatturazione mensile</div>
+          <div><span></span> Fatturazione annuale</div>
+        </div>
 
             <!-- PRIMA COLONNA -->
-          <div class="row">
-            <div class="col-1-3 border">
-              <div>Singolo</div>
+        <div class="row">
+          <div class="col-1-3">
+            <div class="card-professional">
+              <div class="category">Singolo</div>
               <div>
-                <h5>Professional</h5>
-                <p>€ 12,00</p>
-                <p>/mese</p>
-                <ul>
-                  <li>1 utente</li>
-                  <li>5 TB di spazio di archiviazione sicuro</li>
-                  <li>Funzioni di produttività e condivisione file semplice e sicura</li>
-                </ul>
-                <button class="button-xl-blue">Prova gratis per 30 giorni</button>
-                <p>oppure 
-                  <a href="#">acquista ora</a>
-                </p>
-                <div class="border-only"></div>
-                <p>Punti Salienti del piano</p>
-                <ul>
-                  <li>Invia file fino a 100 GB con Dropbox Transfer</li>
-                  <li>Cartelle offline su dispositivi mobili</li>
-                </ul>
+                <div class="title">
+                  <h5>Professional</h5>
+                  <p>€ 12,00</p>
+                  <p>/mese</p>
+                  <ul>
+                    <li>1 utente</li>
+                    <li>5 TB di spazio di archiviazione sicuro</li>
+                    <li>Funzioni di produttività e condivisione file semplice e sicura</li>
+                  </ul>
+                </div>
+                <div class="call-to-action">
+                  <button class="button-xl-blue">Prova gratis per 30 giorni</button>
+                  <p>oppure 
+                    <a href="#">acquista ora</a>
+                  </p>
+                  <div class="border-only"></div>
+                </div>
+                <div class="glossary">
+                  <p>Punti Salienti del piano (grassetto)</p>
+                  <ul>
+                    <li>Invia file fino a 100 GB con Dropbox Transfer</li>
+                    <li>Cartelle offline su dispositivi mobili</li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
 
             <!-- SECONDA COLONNA -->
-            <div class="col-1-3 border">
-              <div>Singolo</div>
+          <div class="col-1-3">
+            <div class="card-advanced">
+              <div class="category">Team</div>
               <div>
-                <h5>Professional</h5>
-                <p>€ 12,00</p>
-                <p>/mese</p>
-                <ul>
-                  <li>1 utente</li>
-                  <li>5 TB di spazio di archiviazione sicuro</li>
-                  <li>Funzioni di produttività e condivisione file semplice e sicura</li>
-                </ul>
-                <button class="button-xl-blue">Prova gratis per 30 giorni</button>
-                <p>oppure 
-                  <a href="#">acquista ora</a>
-                </p>
-                <div class="border-only"></div>
-                <p>Punti Salienti del piano</p>
-                <ul>
-                  <li>Invia file fino a 100 GB con Dropbox Transfer</li>
-                  <li>Cartelle offline su dispositivi mobili</li>
-                </ul>
+                <div class="title">
+                  <h5>Advanced</h5>
+                  <p>€ 18,00</p>
+                  <p>/utente/mese</p>
+                  <ul>
+                    <li>3 o più utent1</li>
+                    <li>Tutto lo spazio di cui ha bisogno il tuo team</li>
+                    <li>Sofisticare funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
+                  </ul>
+                </div>
+                <div class="call-to-action">
+                  <button class="button-xl-blue">Prova gratis per 30 giorni</button>
+                  <p>oppure 
+                    <a href="#">acquista ora</a>
+                  </p>
+                  <div class="border-only"></div>
+                </div>
+                <div class="glossary">
+                  <p>Punti Salienti del piano (grassetto)</p>
+                  <ul>
+                    <li>Nessun limite di spazio per i file</li>
+                    <li>Cartelle offline su dispositivi mobili</li>
+                    <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
+                    <li>Possibilità di inserire nuovi membri del team</li>
+                    <li>Gestione dei permessi in base ai ruoli</li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
 
             <!-- TERZA COLONNA -->
-            <div class="col-1-3 border">
-              <div>Singolo</div>
+          <div class="col-1-3">
+            <div class="card-advanced">
+              <div class="category">Team</div>
               <div>
-                <h5>Professional</h5>
-                <p>€ 12,00</p>
-                <p>/mese</p>
-                <ul>
-                  <li>1 utente</li>
-                  <li>5 TB di spazio di archiviazione sicuro</li>
-                  <li>Funzioni di produttività e condivisione file semplice e sicura</li>
-                </ul>
-                <button class="button-xl-blue">Prova gratis per 30 giorni</button>
-                <p>oppure 
-                  <a href="#">acquista ora</a>
-                </p>
-                <div class="border-only"></div>
-                <p>Punti Salienti del piano</p>
-                <ul>
-                  <li>Invia file fino a 100 GB con Dropbox Transfer</li>
-                  <li>Cartelle offline su dispositivi mobili</li>
-                </ul>
+                <div class="title">
+                  <h5>Advanced</h5>
+                  <p>€ 18,00</p>
+                  <p>/utente/mese</p>
+                  <ul>
+                   <li>3 o più utent1</li>
+                   <li>Tutto lo spazio di cui ha bisogno il tuo team</li>
+                   <li>Sofisticare funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
+                  </ul>
+                </div>
+                <div class="call-to-action">
+                  <button class="button-xl-blue">Prova gratis per 30 giorni</button>
+                  <p>oppure 
+                    <a href="#">acquista ora</a>
+                  </p>
+                  <div class="border-only"></div>
+                </div>
+                <div class="glossary">
+                  <p>Punti Salienti del piano (grassetto)</p>
+                  <ul>
+                    <li>Nessun limite di spazio per i file</li>
+                    <li>Cartelle offline su dispositivi mobili</li>
+                    <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
+                    <li>Possibilità di inserire nuovi membri del team</li>
+                    <li>Gestione dei permessi in base ai ruoli</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>   
-
-          <!-- enterprise -->
-          <div class="row">
-            <div class="col-100"><p>Team</p></div>
-            <div col-60>
-              <div>
-                <h5>Enterprise</h5>
-                <h6>Contatta l'ufficio vendite per i prezzi</h6>
-                <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
-              </div>
-            </div>
-            <div col-40>
-              <button class="button-xl-blue">Contatta l'ufficio vendite</button>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
           <!-- Entra in contatto con un partner Dropbox -->
-          <div class="container">
+          <!-- <div class="container">
             <div class="row">
               <div class="col-60">
                 <img src="./img/partner.png" alt="partner">
@@ -191,16 +200,16 @@
                 <button class="button-small-white">Trova un partner</button>
               </div>
             </div>
-          </div>
+          </div> -->
 
-              <!-- esegui più operazioni con Dropbox Business -->
-          <div class="container">
+            <!-- esegui più operazioni con Dropbox Business -->
+          <!-- <div class="container">
             <div class="row">
               <h2>Esegui più operazioni con Dropbox Business</h2>
-            </div>
+            </div> -->
 
               <!-- prima card -->
-            <div class="row">
+            <!-- <div class="row">
               <div class="card col-1-3">
                 <div class="img-card">
                   <img src="./img/business-feature-switching-tools.png" alt="">
@@ -215,9 +224,10 @@
                     da Dropbox.
                   </p>
                 </div>
-              </div>
+              </div> -->
+
               <!-- seconda card -->
-              <div class="card col-1-3">
+              <!-- <div class="card col-1-3">
                 <div class="img-card">
                   <img src="./img/business-feature-send-files-it.png" alt="">
                 </div>
@@ -231,9 +241,10 @@
                     da Dropbox.
                   </p>
                 </div>
-              </div>
+              </div> -->
+
               <!-- terza card -->
-              <div class="card col-1-3">
+              <!-- <div class="card col-1-3">
                 <div class="img-card">
                   <img src="./img/business-feature-coordinate-it.png" alt="">
                 </div>
@@ -247,9 +258,10 @@
                     da Dropbox.
                   </p>
                 </div>
-              </div>
+              </div> -->
+
                 <!-- quarta card -->
-              <div class="card col-1-3">
+              <!-- <div class="card col-1-3">
                 <div class="img-card">
                   <img src="./img/business-feature-integrations-it.png" alt="">
                 </div>
@@ -263,9 +275,10 @@
                     da Dropbox.
                   </p>
                 </div>
-              </div>
+              </div> -->
+
                 <!-- quinta card -->
-              <div class="card col-1-3">
+              <!-- <div class="card col-1-3">
                 <div class="img-card">
                   <img src="./img/business-feature-multi-device.png" alt="">
                 </div>
@@ -279,9 +292,10 @@
                     da Dropbox.
                   </p>
                 </div>
-              </div>
+              </div> -->
+
                 <!-- sesta card -->
-              <div class="card col-1-3">
+              <!-- <div class="card col-1-3">
                 <div class="img-card">
                   <img src="./img/business-feature-security.png" alt="">
                 </div>
@@ -297,9 +311,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="container">
+          <!-- <div class="container">
             <div class="row">
               <div class="col-50">
                 <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
@@ -307,14 +321,16 @@
               </div>
             </div>
           </div>
+    </section> -->
   </main>
 
    <!-- FOOTER -->
-  <footer>
+  <!-- <footer>
     <div class="container debug">
-      <div class="row">
+      <div class="row"> -->
+
         <!-- colonna 1 -->
-        <div class="col-1-5">
+        <!-- <div class="col-1-5">
           <h5>Dropbox</h5>
           <ul>
             <li><a href="#"></a>Applicazione desktop</li>
@@ -323,9 +339,10 @@
             <li><a href="#"></a>Sicurezza</li>
             <li><a href="#"></a>Funzioni</li>
           </ul>
-        </div>
+        </div> -->
+
         <!-- colonna 2 -->
-        <div class="col-1-5">
+        <!-- <div class="col-1-5">
           <h5>Prodotti</h5>
           <ul>
             <li><a href="#"></a>Applicazione desktop</li>
@@ -334,9 +351,10 @@
             <li><a href="#"></a>Sicurezza</li>
             <li><a href="#"></a>Funzioni</li>
           </ul>
-        </div>
+        </div> -->
+
         <!-- colonna 3 -->
-        <div class="col-1-5">
+        <!-- <div class="col-1-5">
           <h5>Azienda</h5>
           <ul>
             <li><a href="#"></a>Applicazione desktop</li>
@@ -345,9 +363,10 @@
             <li><a href="#"></a>Sicurezza</li>
             <li><a href="#"></a>Funzioni</li>
           </ul>
-        </div>
+        </div> -->
+
         <!-- colonna 4 -->
-        <div class="col-1-5">
+        <!-- <div class="col-1-5">
           <h5>Supporto</h5>
           <ul>
             <li><a href="#"></a>Applicazione desktop</li>
@@ -356,9 +375,10 @@
             <li><a href="#"></a>Sicurezza</li>
             <li><a href="#"></a>Funzioni</li>
           </ul>
-        </div>
+        </div> -->
+
         <!-- colonna 5 -->
-        <div class="col-1-5">
+        <!-- <div class="col-1-5">
           <h5>Community</h5>
           <ul>
             <li><a href="#"></a>Applicazione desktop</li>
@@ -369,16 +389,16 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container debug">
+    <!-- <div class="container debug">
       <div class="border-only"></div>
       <div class="row">
         <i class="fa-solid fa-earth-americas"></i>
           <p>Italiano &#9660;</p>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 </body>
 </html>

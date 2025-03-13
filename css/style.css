@@ -8,7 +8,7 @@
   }
 
 body {
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -41,20 +41,23 @@ img {
     padding-right: 1rem;
   }
 
+  .container-xl {
+    max-width: 1080px; /* Larghezza massima */
+  }
+
 .row {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 2rem;
-/* column-gap: 2rem */
+  row-gap: 1rem;
+  /* column-gap: 1rem; */
   justify-content: space-between;
   align-items: center;
 
   margin-left: -1rem;
   margin-right: -1rem;
-
 }
 
-/* button */
+/* BUTTON */
 .button-xl-blue,
 .button-small-blue {
   background-color: #0061FE;
@@ -73,8 +76,9 @@ img {
   border-color: white;
   color: black;
 }
+/*  /BUTTON */
 
-
+/*  COLONNE */
 [class*='col'] {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -110,108 +114,83 @@ img {
   flex-basis: calc(100% / 3 * 2);
 }
 
-.col-60 {
-  width: 60%;
-}
-
-.col-40 {
-  width: 40%;
-}
-
-.col-100 {
-  width: 100%;
+.col-30 {
+  width: 30%;
 }
 
 .col-50 {
   width: 50%;
 }
 
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.col-70 {
+  width: 70%;
 }
 
-
-    /* HEADER */
-header li {
-  display: inline-block;
-  align-self: center;
-}
-
-.link-funzioni-header img {
-vertical-align: middle;
-}
-
-    /* MAIN */
-main {
-  font-size: 10px;
-}
-
-.wrapper .row > .div {
-  margin: 10px 0;
-}
-.content-focus-main {
-  background-color: #b4d0e6;
-  margin-bottom: 85px;
-}
-
-.content-focus-main > .container {
-  position: relative;
-}
-
-.title-focus-main {
-  padding-bottom: 30px;
-}
-
-h1 {
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.col-60 img {
+.col-100 {
   width: 100%;
 }
+/*  /COLONNE */
 
 
-main .content-focus-main > .container {
+/* HEADER */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: sticky;
+  top: 0;
+}
+
+.page-header li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5rem;
+}
+
+          /* MAIN */
+
+/* SECTION JUMBO */
+#jumbo {
+  background-color: aquamarine;
+  margin-bottom: 50px;
+}
+
+#jumbo .container {
   position: relative;
-  top: 4rem;
-  left: 0;
+  top: 50px;
 }
 
-.description-focus-main .col-40 > i {
-  color: black;
-  font-size: 50px;
-  padding-top: 20px;
-  padding-left: 20px;
+#jumbo h1 {
+  font-size: 61px;
 }
 
-
-.description-focus-main .col-40 > p {
-  padding-top: 20px;
+#jumbo .row * {
+  gap: 4rem;
 }
 
-.description-focus-main .col-40 > button {
-  margin-bottom: 20px;
+#jumbo .title-jumbo {
+  padding-bottom: 2rem;
 }
 
-.description-focus-main .col-40 > button {
-  margin-bottom: 20px;
+#jumbo .col-30 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
 }
 
-/* GRIGLIA RESPONSIVE */
-.border-only {
-  max-width: 50px;
-  border-bottom: 1px solid grey;
+#jumbo .arrow {
+  font-size: 3rem;
+  padding-bottom: 50px;
 }
+/* / SECTION JUMBO */
 
-.border {
-  border: 1px solid grey;
+
+/* SECTION BUSINESS PLAN */
+#business-plan [class*='card'] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
 }
-
-main > .container:nth-of-type(2) .row *+ {
-  margin: 15px 0;
-}
-
-    /* FOOTER */
