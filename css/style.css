@@ -237,7 +237,7 @@ h4 {
   text-align: center;
   border: 1px solid gray;
   flex-basis: calc(100% / 3 - 2rem);
-  height: 790px;
+  min-height: 800px;
 
   position: relative;
   left: 0;
@@ -267,6 +267,10 @@ h4 {
   top: -31px;
   right: 0;
   width: 100%;
+}
+
+#business-plan .li:not(:first-child) {
+  margin-top: 0.5rem;
 }
 
 #business-plan .col-100 .category {
@@ -404,8 +408,8 @@ div.card-enterprise {
 #find-partners .container {
   margin-top: 8rem;
   margin-bottom: 8rem;
-  padding-left: -5rem; 
-  padding-right: -0.5rem;
+  /* padding-left: -5rem; 
+  padding-right: -0.5rem; */
 }
 
 #find-partners .col-30 > * {
@@ -425,8 +429,8 @@ div.card-enterprise {
 
 #utilities .container {
   margin-bottom: 8rem;
-  padding-left: -5rem; 
-  padding-right: -0.5rem;
+  /* padding-left: -5rem; 
+  padding-right: -0.5rem; */
 }
 
 #utilities .row:not(:first-child) {
@@ -437,8 +441,8 @@ div.card-enterprise {
  /* CUSTOMERS */
  #customers .container {
   margin-bottom: 8rem;
-  padding-left: -5rem; 
-  padding-right: -0.5rem;
+  /* padding-left: -5rem; 
+  padding-right: -0.5rem; */
 }
 
 #customers .title-customers {
