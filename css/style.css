@@ -408,3 +408,20 @@ div.card-enterprise {
   margin-bottom: 2rem;
 }
  /* / FIND PARTNERS */
+
+ /* UTILITIES */
+#utilities h2 {
+  margin-bottom: 3rem;
+  padding-left: 0.5rem;
+}
+
+#utilities .title-utilities {
+  margin-bottom: 1rem;
+}
+
+#find-partners .container {
+  margin-bottom: 8rem;
+  padding-left: -5rem; 
+  padding-right: -0.5rem;
+}
+ /* / UTILITIES */
