@@ -8,12 +8,23 @@
   }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
 }
 
-[class*='fa-'] {
-  padding-right: 0.5rem;
+h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 a {
@@ -28,9 +39,6 @@ img {
   width: 100%;
 }
 
-h4 {
-  font-size: 16px;
-}
 
     /* UTILITY */
 
@@ -43,28 +51,33 @@ h4 {
 }
 
 .container {
-    max-width: 850px; /* Larghezza massima */
+    max-width: 980px; /* Larghezza massima */
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .container-xl {
-    max-width: 1080px; /* Larghezza massima */
-  }
+.container-xl {
+  max-width: 1180px; /* Larghezza massima */
+}
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1rem;
-  /* column-gap: 1rem; */
+  /* gap: 1rem; */
   justify-content: space-between;
   align-items: center;
 
   margin-left: -1rem;
   margin-right: -1rem;
 }
+
+section {
+  margin-bottom: 50px;
+}
+
+
 
 /* BUTTON */
 .button-xl-blue,
@@ -80,7 +93,8 @@ h4 {
   padding: 5px;
 }
 
-.button-small-white {
+.button-small-white,
+.button-white {
   background-color: white;
   border-color: white;
   color: black;
@@ -88,16 +102,13 @@ h4 {
 
 .button-small-blue,
 .button-small-white {
-  width: 4rem;
   height: 2rem;
+  width: 4rem;
 }
 
 .button-white {
   height: 2rem;
   width: 8rem;
-  background-color: white;
-  border-color: white;
-  color: black;
 }
 
 .button-xl-blue {
@@ -109,6 +120,7 @@ h4 {
 .border-only {
   max-width: 50px;
   border-bottom: 1px solid grey;
+  margin-bottom: 1.5rem;
 }
 
 /*  COLONNE */
@@ -184,68 +196,85 @@ h4 {
 /* SECTION JUMBO */
 #jumbo {
   background-color: aquamarine;
-  margin-bottom: 5rem;
 }
 
 #jumbo .container {
   position: relative;
-  top: 3rem;
-}
+  top: 50px;
 
-#jumbo h1 {
-  font-size: 50px;
-}
-
-#jumbo .row * {
-  gap: 4rem;
-}
-
-#jumbo .title-jumbo {
-  padding-bottom: 2rem;
+  margin-bottom: 100px;
 }
 
 #jumbo .col-30 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 1rem;
+}
+
+#jumbo .col-30 > * {
+margin: 2rem 0;
 }
 
 #jumbo .arrow {
   display: inline-block;
-  font-size: 4rem;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+
+  font-size: 50px;
 }
 /* / SECTION JUMBO */
 
 
 /* SECTION BUSINESS PLAN */
+#business-plan {
+  border-top: 1px solid #00000010;
+}
+
+#business-plan i {
+  padding-right: 5px;
+}
 
 #business-plan .row {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  row-gap: 2rem;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+#business-plan .col-1-3:not(:nth-child(2)) .glossary {
+  margin-bottom: 5rem;
+}
+
+#business-plan .col-1-3:first-child .glossary {
+  padding-bottom: 2rem;
+}
+
+#business-plan .col-100 {
+  position: relative;
+  top: 0;
+}
+
+#business-plan .card-enterprise-office button {
+  position: absolute;
+  left: 670px;
+  bottom: 135px;
 }
 
 #business-plan .col-1-3 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-
-  margin-top: 2px;
-  margin-bottom: 2px;
   text-align: center;
-  border: 1px solid gray;
   flex-basis: calc(100% / 3 - 2rem);
-  min-height: 800px;
-
-  position: relative;
-  left: 0;
 }
 
 #business-plan .payment-type > div {
   display: inline-block;
-  margin: 2rem 2rem 4rem 0rem;
+  margin-bottom: 3rem;
+}
+
+#business-plan .card-body-upper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 230px;
 }
 
 #business-plan .circle {
@@ -255,76 +284,52 @@ h4 {
   border: 2px solid #0061FE;
   border-radius: 50%;
 }
+/* ------------------------- */
+#business-plan [class*='card']:not(.card-body-upper) {
+  border: 1px solid grey;
+}
 
-#business-plan .category {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  
+#business-plan [class*="card"] [class*="header"] {
   text-align: center;
-  border: 1px solid gray;
-  
-  position: absolute;
-  top: -31px;
-  right: 0;
-  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-#business-plan .li:not(:first-child) {
-  margin-top: 0.5rem;
-}
-
-#business-plan .col-100 .category {
-  position: absolute;
-  top: -31px;
-  right: 0;
-  width: 100%;
-}
-
-#business-plan .card-professional .title,
-#business-plan .title p:nth-child(3),
-#business-plan .call-to-action,
-#business-plan .info p:nth-child(1) {
-  margin-bottom: 3rem;
-}
-
-#business-plan .card-advanced .title,
-#business-plan .card-enterprise .title,
-#business-plan .card-professional .title,
-#business-plan .card-enterprise-office .title {
-  margin-top: 1rem;
-}
-
-#business-plan .card-advanced .title,
-#business-plan .card-enterprise .title,
-#business-plan .info p:nth-child(2) {
-  margin-bottom: 2rem;
-}
-
-#business-plan li,
-#business-plan .call-to-action > *,
-#business-plan .glossary > p {
-  margin-bottom: 2rem;
-}
-
-#business-plan .title > *{
-  margin-bottom: 0.5rem;
-}
-
-#business-plan .col-100 {
-  margin-top: 2.5rem;
-}
-
-div.card-professional,
-div.card-advanced,
-div.card-enterprise {
+#business-plan [class*="card"] [class*="body"] {
   text-align: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-#business-plan .col-100 .card-enterprise-office {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+#business-plan .title {
+  margin-bottom: 0;
+}
+
+#business-plan .price,
+#business-plan .list,
+#business-plan .call-to-action,
+#business-plan .border-only,
+#business-plan .glossary,
+#business-plan .subtitle {
+  padding-bottom: 1.5rem;
+}
+
+#business-plan .price *,
+#business-plan .list *,
+#business-plan .glossary * {
+  padding-bottom: 0.5rem;
+}
+
+#business-plan .button-xl-blue {
+  margin-bottom: 1.5rem;
+}
+
+#business-plan .subtitle {
+  font-weight: bold; 
+}
+
+#business-plan .info {
+  padding-bottom: 3rem;
 }
 
 #business-plan .specs li::before {
@@ -336,59 +341,42 @@ div.card-enterprise {
 }
 
 #business-plan .list li {
-    position: relative;
-    padding-left: 25px;
+  position: relative;
+  padding-left: 25px;
   }
-  
-  #business-plan .list li:first-child::before {
-    font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
-    content: "\f007"; /* Codice Unicode per l'icona dell'utente */
-    color: black;
-    position: absolute;
-    width: 1em;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
+
+#business-plan .list li:first-child::before {
+  font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
+  content: "\f007"; /* Codice Unicode per l'icona dell'utente */
+  color: black;
+  position: absolute;
+  width: 1em;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
   }
 
   #business-plan .list li:nth-child(3)::before {
-    font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
-    content: "\f064"; /* Codice Unicode per l'icona dell'utente */
-    color: black;
-    position: absolute;
-    width: 1em;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
+  font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
+  content: "\f064"; /* Codice Unicode per l'icona dell'utente */
+  color: black;
+  position: absolute;
+  width: 1em;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
   }
 
   #business-plan .list li:nth-child(2)::before {
-    font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
-    content: "\e185"; /* Codice Unicode per l'icona dell'utente */
-    color: black;
-    position: absolute;
-    width: 1em;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
+  font-family: "Font Awesome 6 Free"; /* Font della libreria Font Awesome */
+  content: "\e185"; /* Codice Unicode per l'icona dell'utente */
+  color: black;
+  position: absolute;
+  width: 1em;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);  /*trasla l'icona verso l'alto del 50% della sua altezza, rendendo così l'allineamento verticale più preciso*/
   }
-
-#business-plan .glossary > p,
-#business-plan .info p:nth-child(1) {
-  font-weight: bold;
-}
-
-#business-plan .col-30 > .button-xl-blue {
-  margin-bottom: 6rem;
-}
-
-#business-plan .card-enterprise-office  {
-  border: 1px solid gray;
-}
-
-#business-plan .col-100 .card-enterprise-office {
-  position: relative;
-}
 /* / BUSINESS PLAN */
 
 
@@ -492,3 +480,4 @@ footer {
 }
 
  /* / FOOTER */
+
