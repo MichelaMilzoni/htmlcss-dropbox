@@ -419,9 +419,51 @@ div.card-enterprise {
   margin-bottom: 1rem;
 }
 
-#find-partners .container {
+#utilities .container {
   margin-bottom: 8rem;
   padding-left: -5rem; 
   padding-right: -0.5rem;
 }
+
+#utilities .row:not(:first-child) {
+  row-gap: 2rem;
+}
  /* / UTILITIES */
+
+ /* CUSTOMERS */
+ #customers .container {
+  margin-bottom: 8rem;
+  padding-left: -5rem; 
+  padding-right: -0.5rem;
+}
+
+#customers .title-customers {
+  margin-bottom: 3rem;
+}
+
+#customers a {
+  text-decoration: underline;
+}
+ /* / CUSTOMERS */
+
+ /* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+}
+
+#footer-top h4 {
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+
+#footer-top .col-1-5 {
+  margin-bottom: 4rem;
+}
+
+#footer-top .col-1-5 li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+ /* / FOOTER */
