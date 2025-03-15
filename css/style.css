@@ -62,15 +62,6 @@ img {
   max-width: 1180px; /* Larghezza massima */
 }
 
-.container-grid {
-  min-width: 1280px;
-  min-height: 800px;
-  position: relative;
-  top: 0;
-  left: 370px;
-  margin-bottom: 10rem;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -478,6 +469,13 @@ footer {
 
 
  /* crea una griglia */
+#griglia {
+  position: relative;
+  top: 0;
+  left: 115px;
+  margin-bottom: 20rem;
+}
+
 #grid {
   display: grid;
   grid-template-columns: 200px 200px 400px 200px 200px; /*numero di colonne e la loro larghezza*/
